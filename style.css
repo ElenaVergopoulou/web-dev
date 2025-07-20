@@ -1,0 +1,1489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  pointer-events: auto;
+  background: none;
+  border: 2px solid #00e5ff;
+  color: #00e5ff;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-left: 15px;
+  z-index: 1001;
+}
+
+.theme-toggle:hover {
+  background-color: #00e5ff;
+  color: #121212;
+}
+
+body.light-theme nav ul,
+body.light-theme .film-card,
+body.light-theme .fund-card,
+body.light-theme .event-card {
+  background-color: #fff;
+  color: #121212;
+}
+
+body.light-theme .back-btn,
+body.light-theme .view-details-btn,
+body.light-theme .support-project-btn {
+  border-color: #0077cc;
+  color: #0077cc;
+}
+
+body.light-theme .back-btn:hover,
+body.light-theme .view-details-btn:hover,
+body.light-theme .support-project-btn:hover {
+  background-color: #0077cc;
+  color: white;
+}
+
+/* Light theme overrides */
+body.light-theme {
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+body.light-theme .film-card,
+body.light-theme .fund-card {
+  background-color: #fff;
+  color: #111;
+}
+
+body.light-theme .film-card h3,
+body.light-theme .film-card p,
+body.light-theme .fund-card h3,
+body.light-theme .fund-card p {
+  color: #111;
+}
+
+/* Light Theme Navbar */
+body.light-theme header {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme nav ul li a:hover {
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+body.light-theme .logo {
+  color: black;
+}
+
+body.light-theme footer {
+  background-color: #f1f1f1;
+  color: #333;
+  box-shadow: 0 -4px 15px rgba(200, 200, 200, 0.3);
+}
+
+body.light-theme .film-info-table th {
+  color: #007acc;
+}
+
+body.light-theme .film-info-table tr:nth-child(even) {
+  background-color: #eee;
+}
+
+body.light-theme .film-info-table td {
+  color: #333;
+}
+
+body.light-theme .reviews h3 {
+  color: #007acc;
+}
+
+body.light-theme .review-list li {
+  background-color: #f2f2f2;
+  color: #333;
+  border-left: 4px solid #007acc;
+}
+
+body.light-theme .review-list li strong {
+  color: #007acc;
+}
+
+/* Hamburger icon base style already defined elsewhere */
+
+body.light-theme .hamburger span {
+  background-color: #121212;
+}
+
+body.light-theme nav {
+  background-color: #fff;
+}
+
+body.light-theme .form-section {
+  background-color: #f9f9f9;
+  color: black;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+body.light-theme input,
+body.light-theme select {
+  background-color: white;
+  color: #121212;
+  border: 1px solid #ccc;
+}
+
+body.light-theme textarea {
+  color: black;
+}
+
+body.light-theme label {
+  color: #121212;
+}
+
+body.light-theme nav ul li a {
+  color: #121212;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+body.light-theme #search-bar,
+body.light-theme #filter-genre,
+body.light-theme #sort-by {
+  background-color: #fff;
+  color: #121212;
+  border: 2px solid #ccc;
+}
+
+body.light-theme #search-bar::placeholder {
+  color: #777;
+}
+
+body.light-theme #search-button,
+body.light-theme #clear-filters {
+  background-color: #ddd;
+  color: #121212;
+  border: none;
+}
+
+body.light-theme #search-button:hover,
+body.light-theme #clear-filters:hover {
+  background-color: #ccc;
+}
+
+body.light-theme .film-card {
+  background-color: #fff;
+  color: #121212;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Only affects Discover Films heading */
+body.light-theme .discover-heading {
+  color: #121212;
+}
+
+/* Crowdfunding header section in light mode */
+body.light-theme .crowdfunding-intro {
+  background-color: #eeeeee;
+  color: #121212;
+}
+
+/* Fix description background inside the cards */
+body.light-theme .description-banner {
+  background-color: #e6e6e6;
+  color: #333;
+}
+
+/* Fix header text color in light theme */
+body.light-theme .crowdfunding-intro h1,
+body.light-theme .crowdfunding-intro p {
+  color: #222 !important;
+}
+
+/* Light Theme - Events header */
+body.light-theme .events-intro {
+  background-color: #f1f1f1; /* light background */
+  color: #222; /* dark gray text */
+}
+
+body.light-theme .events-intro h1,
+body.light-theme .events-intro p {
+  color: #222; /* override white text */
+}
+
+.logo {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #aaa;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #000;
+  color: white;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 40px;
+  gap: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+nav ul li a.active {
+  color: #00e5ff;
+  font-weight: 700;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* soft transparent white */
+  color: #00e5ff; /* optional: give a slight neon highlight */
+}
+
+/* Video*/
+.hero-video {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 80px); /* Adjust if your header height is different */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4); /* Optional dark overlay */
+  color: white;
+  padding: 2rem;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: pink;
+}
+
+.hero-overlay p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: pink;
+}
+
+/* Carousel */
+
+.home-page .carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.home-page .carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.home-page .carousel-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.home-page .carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.home-page .film-card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease;
+  min-width: 220px;
+  max-width: 240px;
+  height: auto;
+  flex: 0 0 auto;
+}
+
+.home-page .film-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Info Text Styling */
+.home-page .film-card .info h3 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Carousel Arrows */
+.home-page .carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  z-index: 2;
+}
+
+.home-page .carousel-btn.left {
+  left: 0.5rem;
+}
+
+.home-page .carousel-btn.right {
+  right: 0.5rem;
+}
+
+.home-page .carousel-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* Reset link styling inside film card */
+.film-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.film-card .countdown {
+  margin-top: 12px;
+  padding: 6px 10px;
+  background-color: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #00e5ff;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.film-card .countdown:hover {
+  background-color: rgba(0, 229, 255, 0.2);
+  border-color: #00e5ff;
+}
+
+/* Light theme override */
+body.light-theme .film-card .countdown {
+  background-color: rgba(0, 122, 204, 0.1);
+  border: 1px solid rgba(0, 122, 204, 0.2);
+  color: #007acc;
+}
+
+body.light-theme .film-card .countdown:hover {
+  background-color: rgba(0, 122, 204, 0.15);
+  border-color: #007acc;
+}
+
+/* Make sure the countdown itself doesn't inherit link styles */
+.film-card .countdown,
+.film-card .countdown * {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+/* Videos Homepage */
+.indie-videos {
+  padding: 20px 0;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.indie-videos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00e5ff;
+}
+
+.indie-videos .video-grid {
+  justify-content: center;
+}
+
+body.light-theme .indie-videos h2 {
+  color: #007acc;
+}
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.video-card {
+  max-width: 320px;
+  width: 100%;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 229, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+body.light-theme .video-card {
+  background-color: #ffffff;
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-card p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+body.light-theme .video-card p {
+  color: #333;
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+/* ==========================
+   Responsive Adjustments
+========================== */
+@media (max-width: 1024px) {
+  .home-page .film-card {
+    min-width: 180px;
+    max-width: 200px;
+  }
+
+  .home-page .film-card img {
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page .film-card {
+    min-width: 150px;
+    max-width: 170px;
+  }
+
+  .home-page .film-card img {
+    height: 250px;
+  }
+
+  .home-page .carousel-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page .film-card {
+    min-width: 80%;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .home-page .film-card img {
+    height: 260px;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero-overlay h1,
+  .section-heading,
+  .crowdfunding-intro h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+/* Hamburger menu  */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+nav.active {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+}
+
+/* Tabs */
+.tabs {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tab-btn {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.tab-btn.active {
+  background-color: #00e5ff;
+  color: #121212;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 0;
+}
+
+/* Film Cards Layout */
+.film-card {
+  background-color: #1e1e1e;
+  color: white;
+  width: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.film-card:hover {
+  transform: translateY(-5px);
+}
+
+.film-card img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.film-card .info {
+  margin-top: 10px;
+}
+
+.film-card .info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.film-card .info p {
+  color: #bbb;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.film-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.discover-heading {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 40px 0 10px;
+  color: white;
+  font-family: inherit;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tab-content.active {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .film-card {
+    width: 90%;
+  }
+}
+
+/* Discover Films – Filters & Search */
+
+.section-heading {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 40px 0 10px;
+  color: white;
+  font-family: inherit;
+}
+
+/* Filter/Search Section Container */
+.search-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #121212;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+body.light-theme .search-filters {
+  background-color: #eeeeee;
+}
+
+/* Shared styles for inputs and selects */
+.search-filters input,
+.search-filters select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 1rem;
+  transition: border 0.3s ease, background-color 0.3s ease;
+  white-space: normal;
+  line-height: 1.4;
+  padding-right: 2.5rem;
+  min-width: 250px;
+  flex-shrink: 0;
+}
+
+.search-filters input:focus,
+.search-filters select:focus {
+  outline: none;
+  border-color: #00e5ff;
+  background-color: #202020;
+}
+
+/* Specific styles for search input */
+#search-bar {
+  width: 300px;
+  padding-left: 15px;
+}
+
+/* Sort and genre dropdowns */
+/* Genre Dropdown */
+#filter-genre {
+  flex: 1;
+  min-width: 150px;
+  padding: 10px 10px;
+  font-size: 1rem;
+}
+
+/* Sort Dropdown */
+#sort-by {
+  flex: 2;
+  min-width: 200px;
+  padding: 10px 14px;
+  font-size: 1rem;
+}
+
+/* Clear Filters Button */
+#clear-filters {
+  padding: 10px 18px;
+  background-color: #00e5ff;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#clear-filters:hover {
+  background-color: #00bcd4;
+}
+
+@media (max-width: 768px) {
+  /* Adjust the filter width on smaller screens */
+  #filter-genre,
+  #sort-by {
+    width: 100%; /* Make filters full-width on small screens */
+  }
+}
+
+/* Crowdfunding Section */
+
+/* === Crowdfunding Section Intro === */
+.crowdfunding-intro {
+  text-align: center;
+  background-color: #121212;
+  color: white;
+  font-family: inherit;
+}
+
+.crowdfunding-intro h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 40px 0 10px;
+  color: white;
+  font-family: inherit;
+}
+
+.crowdfunding-intro p {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: inherit;
+}
+
+.crowdfunding-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.fund-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #fff;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  padding: 16px;
+}
+
+.fund-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fund-info h3 {
+  margin-top: 12px;
+  font-size: 1.3rem;
+  color: #00e5ff;
+}
+
+.fund-info p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+.funding-status {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #444;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #00e5ff;
+}
+
+/* Back Button – for navigation */
+.back-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #00e5ff;
+  border: 2px solid #00e5ff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 25px auto;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #00e5ff;
+  color: #121212;
+}
+
+/* Support Button – for donations */
+.support-project-btn {
+  padding: 12px 30px;
+  background-color: transparent;
+  color: #00e5ff;
+  border: 2px solid #00e5ff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 30px auto;
+  display: block;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.support-project-btn:hover {
+  background-color: #00e5ff;
+  color: #121212;
+  transform: scale(1.03);
+}
+
+/* Support Confirmation */
+.confirmation-toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00e5ff;
+  color: #121212;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2000;
+  opacity: 0;
+  animation: fadeInOut 3s forwards;
+  max-width: 90%;
+  width: fit-content;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Optional: smaller text for tiny screens */
+@media (max-width: 400px) {
+  .confirmation-toast {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
+/* Center button inside card */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+/* Banner-style for description */
+.description-banner {
+  background-color: #222;
+  color: #ccc;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 15px 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: left;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Film Details Layout */
+.film-details-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.film-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 30px 0 20px;
+  color: white;
+}
+
+body.light-theme .film-title {
+  color: #121212;
+}
+
+.film-details-layout img {
+  max-width: 300px;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.film-info-table {
+  color: #ccc;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+}
+
+.film-info-table th,
+.film-info-table td {
+  text-align: left;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.film-info-table th {
+  color: #00e5ff;
+  width: 150px;
+}
+
+.film-info-table tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+.film-details {
+  padding-bottom: 80px; /* Creates space before footer */
+}
+
+.reviews {
+  margin-top: 40px;
+}
+
+.reviews h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #00e5ff;
+}
+
+.review-list {
+  list-style: none;
+  padding: 0;
+}
+
+.review-list li {
+  background-color: #1e1e1e;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-left: 4px solid #00e5ff;
+  border-radius: 8px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.review-list li strong {
+  color: #00e5ff;
+}
+
+/* Events Section */
+
+.events-intro {
+  text-align: center;
+  background-color: #121212;
+  color: white;
+  font-family: inherit;
+}
+
+.events-intro h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 40px 0 10px;
+  color: white;
+  font-family: inherit;
+}
+
+.events-intro p {
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: inherit;
+}
+
+.events-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.events-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.event-card {
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.event-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  height: 300px;
+  object-fit: cover;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.event-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.event-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.event-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #bbb;
+}
+
+.view-details-btn {
+  background-color: #00e5ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+  transition: background 0.3s;
+  font-weight: 600;
+  margin-top: 20px;
+  align-self: left;
+}
+
+.view-details-btn:hover {
+  background-color: #00bcd4;
+}
+
+.event-details {
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #444;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #121212;
+  color: #fff;
+  margin: auto;
+  padding: 30px 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.modal-content input[type="number"] {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  font-size: 1rem;
+  border: 1px solid #555;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.modal-content button {
+  background-color: #00e5ff;
+  color: #121212;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #00bcd4;
+}
+
+.modal .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 26px;
+  color: #999;
+  cursor: pointer;
+}
+
+.modal .close-btn:hover {
+  color: #333;
+}
+
+/* Light Theme Modal */
+body.light-theme .modal-content {
+  background-color: #fff;
+  color: #121212;
+}
+
+body.light-theme .modal-content input[type="number"] {
+  background-color: #f9f9f9;
+  color: #121212;
+  border: 1px solid #ccc;
+}
+
+body.light-theme .modal .close-btn {
+  color: #666;
+}
+
+/* Hamburger menu style */
+.hamburger {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger span {
+  background-color: #fff;
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+}
+
+/* Form style */
+.form-section {
+  background-color: #1e1e1e;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  text-align: left;
+  color: white;
+}
+
+.form-section h2 {
+  color: #00e5ff;
+  margin-bottom: 10px;
+}
+
+.form-section p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-section label {
+  font-weight: bold;
+}
+
+.form-section input,
+.form-section textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: white;
+}
+
+.form-section button {
+  padding: 12px 25px;
+  background-color: #00e5ff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #121212;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-section button:hover {
+  background-color: #00bcd4;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 15px;
+  margin-bottom: 20px;
+}
+
+.checkbox-group label {
+  flex: 1 1 200px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.confirmation-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #e6f7ff;
+  border: 1px solid #91d5ff;
+  border-radius: 6px;
+  color: #0050b3;
+}
+
+@media (max-width: 768px) {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 60px; /* Push dropdown below the nav bar */
+    right: 1rem;
+    background: #111;
+    padding: 1rem;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    width: 20px;
+    height: 3px;
+    background-color: currentColor;
+    border-radius: 4px;
+  }
+
+  .theme-toggle-wrapper {
+    margin-left: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+}
