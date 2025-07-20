@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crowdfunding | Indie Film Platform</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+    <header>
+      <div class="container">
+       <a href="index.html" class="logo">IndieFlix</a>
+        <nav>
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="films.html">Discover Films</a></li>
+            <li><a href="crowdfunding.html"class="active" >Crowdfunding</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">☀️ / 🌙</button>
+      </div>
+    </header>
+
+
+  <section class="crowdfunding-intro">
+    <div class="container">
+      <h1 class="section-heading">Support Independent Creators</h1>
+      <p class="section-subheading">Discover exciting film projects and help bring them to life.</p>
+    </div>
+  </section>
+
+  <section class="crowdfunding-gallery container" id="project-container">
+    <!-- Cards injected via JS -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Elena Vergopoulou. <br /> This is a Web Development Assignment for City Univercity of London, Human Computer Interaction Masters.</p>
+  </footer>
+
+  <script src="scripts/data.js" defer></script>
+  <script src="scripts/crowdfunding.js" defer></script>
+</body>
+</html>

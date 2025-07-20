@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Films | Indie Film Platform</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">IndieFlix</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="films.html" class="active">Discover Films</a></li>
+            <li><a href="crowdfunding.html">Crowdfunding</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">☀️ / 🌙</button>
+      </div>
+    </header>
+    <!-- Discover Films Section -->
+    <h2 class="discover-heading">Discover Exciting Films</h2>
+    <!-- Search, Filters, and Sorting Section -->
+    <section class="search-filters container">
+      <input type="text" id="search-bar" placeholder="Search for films..." />
+      <select id="filter-genre"></select>
+
+      <select id="sort-by">
+        <option value="title">Title (A–Z)</option>
+        <option value="release-newest">Release Date (Newest)</option>
+        <option value="release-oldest">Release Date (Oldest)</option>
+        <option value="raised-highest">Raised Amount (High to Low) </option>
+        <option value="raised-lowest">Raised Amount (Low to High)</option>
+      </select>
+
+      <!-- <button id="search-button">Search</button> -->
+      <button id="clear-filters">Clear Filters</button>
+    </section>
+    <section class="discover-films container">
+      <div class="film-gallery" id="film-gallery">
+        <!-- Featured Films will be dynamically inserted here -->
+      </div>
+    </section>
+    <footer>
+      <p>
+        &copy; 2025 Elena Vergopoulou. <br /> This is a Web Development Assignment for
+        City Univercity of London, Human Computer Interaction Masters.
+      </p>
+    </footer>
+
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/discover-films.js" defer></script>
+  </body>
+</html>

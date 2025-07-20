@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indie Film Showcase</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="home-page">
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">IndieFlix</a>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="films.html">Discover Films</a></li>
+            <li><a href="crowdfunding.html">Crowdfunding</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+          <button id="theme-toggle" class="theme-toggle">☀️ / 🌙</button>
+      </div>
+    </header>
+
+    <!-- Hero Video -->
+    <section class="hero-video">
+      <video autoplay muted loop playsinline>
+        <source
+          src="https://cdn.glitch.global/a640d6da-26e4-4f8d-8846-6db9cc05dd76/mixkit-multicolor-ink-swirls-in-water-286-hd-ready.mp4?v=1746915809471"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-overlay">
+        <h1>Discover Indie Cinema</h1>
+        <p>Support and explore independent film projects</p>
+      </div>
+    </section>
+
+    <!-- Tabs -->
+    <section class="tabs container">
+      <button id="featured-tab" class="tab-btn active">Featured Films</button>
+      <button id="comingsoon-tab" class="tab-btn">Coming Soon</button>
+    </section>
+
+    <!-- Tab Panels -->
+    <section class="tab-panels container">
+      <div id="featured-content" class="tab-content active">
+        <div class="carousel-wrapper">
+          <button class="carousel-btn left" id="left-btn-featured">
+            &#10094;
+          </button>
+          <div class="carousel-track-container">
+            <div class="carousel-track" id="film-carousel-featured"></div>
+          </div>
+          <button class="carousel-btn right" id="right-btn-featured">
+            &#10095;
+          </button>
+        </div>
+      </div>
+
+      <div id="comingsoon-content" class="tab-content">
+        <div class="carousel-wrapper">
+          <button class="carousel-btn left" id="left-btn-comingsoon">
+            &#10094;
+          </button>
+          <div class="carousel-track-container">
+            <div class="carousel-track" id="film-carousel-comingsoon"></div>
+          </div>
+          <button class="carousel-btn right" id="right-btn-comingsoon">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="indie-videos container">
+      <h2>Inside Independent Filmmaking</h2>
+      <div class="video-grid">
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/BCuB2mdv00c"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <p>What is an Independent Film?</p>
+        </div>
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/-ozL_P5Hm2U"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <p>Are Streamer Killing Indie Films?</p>
+        </div>
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/WK09Qg5xL9I"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <p>How Much Money Do Independent Movies Make?</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2025 Elena Vergopoulou. <br /> This is a Web Development Assignment for
+        City Univercity of London, Human Computer Interaction Masters.
+      </p>
+    </footer>
+
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/homepage.js" defer></script>
+  </body>
+</html>

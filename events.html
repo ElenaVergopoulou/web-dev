@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | Indie Film Platform</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">IndieFlix</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="films.html">Discover Films</a></li>
+            <li><a href="crowdfunding.html">Crowdfunding</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">☀️ / 🌙</button>
+      </div>
+    </header>
+
+    <section class="events-intro container">
+      <h1>Upcoming Events</h1>
+      <p>Join us for exciting film-related events!</p>
+    </section>
+
+    <section class="events-gallery container" id="events-container">
+      <!-- Event cards will be injected here via JS -->
+    </section>
+
+    <section class="form-section container">
+      <h2>Stay Updated on Indie Events</h2>
+      <p>
+        Want to be the first to hear about upcoming indie film events? Fill out
+        the form below.
+      </p>
+      <form id="event-form">
+        <label for="name">Your Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your full name"
+          required
+        />
+
+        <label for="email">Your Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          required
+        />
+
+        <label>What types of events are you interested in?</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="interests" value="Screenings" /> Screenings</label>
+          <label><input type="checkbox" name="interests" value="Workshops" /> Workshops</label>
+          <label><input type="checkbox" name="interests" value="Networking" /> Networking</label>
+          <label><input type="checkbox" name="interests" value="Panels" /> Panels</label>
+          <label><input type="checkbox" name="interests" value="Q&A Sessions" /> Q&A Sessions</label>
+        </div>
+
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Elena Vergopoulou. <br /> This is a Web Development Assignment for City Univercity of London, Human Computer Interaction Masters.</p>
+    </footer>
+
+    <script src="scripts/events.js"></script>
+  </body>
+</html>
